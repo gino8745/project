@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊帳號</title>
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <main>
+        <div class="box">
+            <div class="content">
+                <div class="homepage">
+                    <a href="http://localhost:8082/user/login.html">
+                        <img class="homepage-img"  src="../img/house.png" alt="Homepage">
+                    </a>
+                </div>
+            </div><br>
+            <div class="content2">
+                <h1>註冊帳號</h1>
+            </div>
+            <div class="e-mail">
+                <form id="uploadForm">
+                    <input type="text" id="UserName" autocomplete="UserName" placeholder="UserName" required>
+                    <input type="password" id="password" placeholder="password" required><br>
+                    <input type="password" id="click" placeholder="clickpassword" required><br>
+                    <span id="password-error" style="color:red;"></span><br>
+                
+                    <label for="gender" class="gender">性別</label>
+                    <input type="radio" value="男" class="gender" name="gender" id="male" checked="checked" >男
+                    <input type="radio" value="女" class="gender" name="gender" id="female">女<br>
+                    <input type="email" id="email" autocomplete="email" placeholder="e-mail" required><br>
+                    <span id="passcode-error" style="color:red;"></span><br>
+                    <input type="text" id="emailpasscode" class="passcode" required>
+                    <button type="button" class="passcodebut" id="passcode">發送驗證碼</button><br>
+
+                    <button type="submit" id="signup">註冊</button>
+                </form>
+            </div> 
+        </div>
+    </main>
+
+    <footer></footer>
+    <script src="./js/signup.js"></script>
+    <script>
+        document.getElementById('signup').addEventListener('click', handForSubmit);
+        document.getElementById('passcode').addEventListener('click', passcode);
+    </script>
+</body>
+</html>

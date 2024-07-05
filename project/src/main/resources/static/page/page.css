@@ -1,0 +1,158 @@
+body {
+    width: 100%;
+    height: auto;
+    word-wrap: break-word;
+    font-weight: bold;
+    background-size: auto;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.navbar {
+    background-color: rgb(22, 18, 18);
+    font-weight: bold;
+    font-size: 20px;
+    width: 100%;
+}
+.space {
+    height: 70px;
+    width: 100%;
+}
+.writerbox{
+	height: 70%;
+
+	font-size: 40px;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+.writer{
+	margin-left: 100px;
+
+}
+.like{
+	 font-size: 40px;
+	 margin-left: 30px;
+	 border-radius: 10px;
+}
+
+.box {
+
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.title {
+    width: 85%;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.title-img {
+	border: 2px solid;
+    text-align: center;
+    width: 80%;
+}
+.title-img-size {
+    width: 100%;
+    max-height:600px;
+}
+.first, .sencen, .third {
+    margin-top: 10px;
+    width: 60%;
+    height: auto;
+    font-size: 30px;
+}
+.img-size {
+   
+    width: 600px;
+    height: 400px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.contenter {
+    margin-top: 20px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content {
+    margin: 5px;
+    height: 100%;
+    width: 15%;
+}
+.content-img {
+    height: 60%;
+    width: 100%;
+}
+.content-img-size {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    background-size: auto;
+    background-position: center;
+}
+.content-text {
+    height: 40%;
+    width: 100%;
+    font-size: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+footer {
+    margin-top: 30px;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .title, .first, .sencen, .third {
+        width: 700px;
+        font-size: 30px;
+    }
+    .content {
+        width: 40%;
+    }
+    .content-text {
+        font-size: 20px;
+    }
+    .title-img{
+        width: 700px;
+    }
+    .sencen-img,.third-img{
+        width: 600px;
+    }
+    .contenter {
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+     }
+}
+@media (max-width: 545px) {
+    .contenter {
+       border: 2px solid;
+    }
+    .navbar {
+        font-size: 18px;
+    }
+    .title {
+        font-size: 25px;
+    }
+    .button-box {
+        font-size: 16px;
+    }
+    .searchid .form-control {
+        font-size: 12px;
+    }
+    .searchid .btn {
+        font-size: 12px;
+        padding: 0.25rem 0.5rem;
+    }
+}

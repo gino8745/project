@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/forget.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <main>
+        <div class="box">
+           <div class="content">
+                <div class="homepage">
+                    <a href="http://localhost:8082/user/login.html">
+                        <img class="homepage-img"  src="../img/house.png" alt="Homepage">
+                    </a>
+                </div>
+            </div>
+            <div class="content2">
+                <h1>忘記密碼</h1>
+            </div>
+            <div class="e-mail">
+                <form id="user">
+                    <input type="email"  id="useremail" placeholder="Email " required><br>
+                    <span id="error-message" style="color:red;"></span><br>
+                    <button type="submit" id="setemail">傳送</button>
+                </form>
+            </div> 
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    
+    <footer></footer>
+    <script >
+        document.getElementById('user').addEventListener("submit",handForSubmit);
+    </script>
+</body>
+
+</html>

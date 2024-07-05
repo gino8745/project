@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="./css/style.css">
+<script src="./js/index.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+		<div class="container-fluid">
+
+			<div class="collapse navbar-collapse justify-content-center"
+				id="navbarSupportedContent">
+
+				<ul class="navbar-nav">
+					<li class="nav-item "><a class="nav-link active"
+						aria-current="page" href="./index.html">首頁</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./world.html">國際</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Politics.html">政治</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Business.html">經濟</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Health.html">醫療</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Entertainment.html">娛樂</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Travel.html">旅遊</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Sports.html">體育</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./Weather.html">天氣</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./like.html">收藏</a></li>
+					<li class="nav-item"><a class="nav-link active"
+						aria-current="page" href="./record.html">紀錄</a></li>
+				</ul>
+			</div>
+
+		
+
+			<div class="d-grid gap-2 d-md-flex  justify-content-md-end ">
+				<button class="btn btn-primary me-md-2" id="logout" type="button">登出</button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="title"></div>
+	<div class="title">
+		<h1 class="word">頭條</h1>
+	</div>
+		<div class="nav " id="bns">
+			<div class="first" id="first">
+			
+			</div>
+			<div class="first2" id="first2">
+				
+			</div>
+		</div>
+	<div class="title">
+		<a href="./world.html"><h1 class="word">全球新聞</h1></a>
+	</div>
+
+	<div class="worldnews" id="worldnews"></div>
+
+	<div class="title">
+		<a href="./Politics.html">
+			<h1 class="word">政治新聞</h1>
+		</a>
+	</div>
+
+	<div class="worldnews" id="politicsnews"></div>
+	<div class="title">
+		<a href="Business.html">
+			<h1 class="word">經濟新聞</h1>
+		</a>
+	</div>
+	<div class="worldnews" id="businessnews"></div>
+
+	<div class="title">
+		<a href="./Health.html">
+			<h1 class="word">醫療新聞</h1>
+		</a>
+	</div>
+
+	<div class="worldnews" id="healthnews"></div>
+	<div class="title">
+		<a href="./Entertainment.html"><h1 class="word">娛樂新聞</h1></a>
+	</div>
+	<div class="worldnews" id="entertainmentnews"></div>
+	<div class="title">
+		<a href="./Travel.html"><h1 class="word">旅遊新聞</h1></a>
+	</div>
+	<div class="worldnews" id="travelnews"></div>
+	<div class="title">
+		<a href="./Sports.html"><h1 class="word">體育新聞</h1></a>
+	</div>
+	<div class="worldnews" id="sportsnews"></div>
+	<div class="title">
+		<a href="./Weather.html"><h1 class="word">天氣新聞</h1></a>
+	</div>
+	<div class="worldnews" id="weathernews"></div>
+
+
+
+
+
+
+	<footer></footer>
+
+
+
+
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+		crossorigin="anonymous"></script>
+	<script>
+	 document.getElementById('bns').addEventListener("click", bnsbutton);
+	 document.getElementById('logout').addEventListener("click",()=>{
+		sessionStorage.clear();
+		window.location.href="http://localhost:8082/visitor/index.html";
+	 })
+	 var navbar = document.getElementById("navbar");
+
+		window.addEventListener("scroll", function() {
+
+			if (window.scrollY > 100) {
+				navbar.classList.add("fixed-top");
+			} else {
+				navbar.classList.remove("fixed-top");
+			}
+		});
+	</script>
+
+
+</body>
+
+</html>

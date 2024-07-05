@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/login.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <div class="box">
+            <div class="content">
+                <div class="homepage">
+                    <a href="http://localhost:8082/visitor/index.html">
+                        <img class="homepage-img"  src="../img/house.png" alt="Homepage">
+                    </a>
+                </div>
+            </div>
+            <div class="content2">
+                <h1>登入帳號</h1>
+            </div>
+            <div class="e-mail">
+                <form id="user">
+                    <input type="email"  id="useremail" placeholder="Email " required><br>
+                    <input type="password"  id="password" placeholder="password" required><br>
+                                        <span id="error-message" style="color:red;"></span><br>
+                    
+             <input type="text" class="passcode" id="captchaInput" placeholder="" required>
+             <a href=""><img id="captchaImage" class="captchaImage" src="http://localhost:8082/user/captcha" style="vertical-align: middle;"></a><br>
+                    <a href="../user/forget.html" class="Forgot">忘記密碼</a> <br>
+                    <button type="submit">登入</button>
+                </form>
+            </div> 
+            <div class="signup">
+                <h1 class="button">註冊帳號   <a href="./signup.html" class="button">註冊</a></h1>
+            </div>
+        </div>
+    </main>
+
+
+    <footer></footer>
+    <script >
+        document.getElementById('user').addEventListener("submit",handForSubmit);
+        document.getElementById('captchaImage').addEventListener('click', (event) => {
+            event.preventDefault(); 
+            refreshCaptcha(); 
+        });
+    </script>
+</body>
+
+</html>
